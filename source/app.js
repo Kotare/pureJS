@@ -125,7 +125,7 @@ res.write(
 
         h2("Using variables within the template"),
         p("The value of x is: " + x),
-        p("The value of msg is:" + msg),
+        p("The value of msg is:" + message),
 
         div( {class : "anything", id : "div_01"},
           h2("Header inside a div"),

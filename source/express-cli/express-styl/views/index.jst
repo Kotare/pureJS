@@ -1,0 +1,44 @@
+var x = 1;
+var msg = "Hello!";
+
+html(
+  head(
+    title("PureJS")
+  ),
+  body(
+      h1("This is a h1 header"),
+      p("Welcome to NoHTML / pure js templating demo"),
+
+      h2("This is a h2 header"),
+      p("This is a paragraph"),
+
+      h2("Using variables within the template"),
+      p("The value of x is: " + x),
+      p("The value of msg is:" + msg),
+
+      div( {class : "anything", id : "div_01"},
+        h2("Header inside a div"),
+        p("paragraph inside a div"),
+        "some free-standing text 1",
+        br(),
+        "some free-standing text 2"
+      ),
+
+      h2("links"),
+      a( {href : "http://www.google.com"},
+        "Google"
+      ),
+
+      h2("static lists"),
+      ul(
+        li("item 1"),
+        li("item 2"),
+        li(
+          "item 3",
+          p("paragraph inside a list"),
+          p("paragraph inside a list 2")
+        )
+      )
+  )
+);
+

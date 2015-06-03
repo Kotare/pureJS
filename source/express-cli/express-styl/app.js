@@ -129,7 +129,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // register the template engine
 // replace jade with jst!
-//app.set('view engine', 'jade');
+// app.set('view engine', 'jade');
 app.set('view engine', 'jst');
 
 // uncomment after placing your favicon in /public

@@ -11,10 +11,12 @@ var fs = require('fs');
 
 var app = express();
 
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //
 // This defines the template engine
 // TODO: implement as an external module similar to jade?
+/*
 app.engine('jst', function (filePath, options, callback) {
   fs.readFile(filePath, function (err, content) {
     if (err) return callback(new Error(err));
@@ -121,6 +123,8 @@ app.engine('jst', function (filePath, options, callback) {
     return callback(null, rendered);
   })
 });
+*/
+app.engine('jst', require('just')); //.__express removed
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
